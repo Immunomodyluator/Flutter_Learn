@@ -1,0 +1,509 @@
+[
+  {
+    "number": "1",
+    "title": "Введение в Dart",
+    "description": "Обзор языка Dart как основы Flutter: зачем он нужен, чем отличается от других языков, установка SDK"
+  },
+  {
+    "number": "1.1",
+    "title": "Переменные и типы данных",
+    "description": "var, final, const, int, double, String, bool, dynamic, null safety"
+  },
+  {
+    "number": "1.2",
+    "title": "Коллекции",
+    "description": "List, Map, Set — создание, итерация, spread-оператор, collection if/for"
+  },
+  {
+    "number": "1.3",
+    "title": "Функции и стрелочные функции",
+    "description": "Позиционные и именованные параметры, optional параметры, функции первого класса"
+  },
+  {
+    "number": "1.4",
+    "title": "ООП в Dart",
+    "description": "Классы, конструкторы (named, factory), наследование, миксины, интерфейсы, абстрактные классы"
+  },
+  {
+    "number": "1.5",
+    "title": "Null Safety",
+    "description": "Nullable/non-nullable типы, оператор ?., ??, !, late — безопасная работа с null"
+  },
+  {
+    "number": "1.6",
+    "title": "Асинхронность: Future и async/await",
+    "description": "Асинхронные операции, Future, async/await, обработка ошибок через try/catch"
+  },
+  {
+    "number": "1.7",
+    "title": "Streams",
+    "description": "Потоки данных, StreamController, listen, StreamBuilder — основы реактивного подхода"
+  },
+
+  {
+    "number": "2",
+    "title": "Настройка окружения Flutter",
+    "description": "Установка Flutter SDK, настройка IDE (VS Code / Android Studio), flutter doctor, создание первого проекта"
+  },
+  {
+    "number": "2.1",
+    "title": "Структура Flutter-проекта",
+    "description": "Директории lib, assets, pubspec.yaml, разбор точки входа main.dart и функции runApp"
+  },
+  {
+    "number": "2.2",
+    "title": "Flutter CLI",
+    "description": "Основные команды: flutter run, build, pub get, analyze, format, test"
+  },
+  {
+    "number": "2.3",
+    "title": "Hot Reload и Hot Restart",
+    "description": "Отличие горячей перезагрузки от перезапуска, сценарии применения в разработке"
+  },
+
+  {
+    "number": "3",
+    "title": "Основы виджетов",
+    "description": "Философия «всё — виджет», дерево виджетов, BuildContext, отличие StatelessWidget от StatefulWidget"
+  },
+  {
+    "number": "3.1",
+    "title": "StatelessWidget",
+    "description": "Создание неизменяемых виджетов, метод build, передача данных через конструктор"
+  },
+  {
+    "number": "3.2",
+    "title": "StatefulWidget и State",
+    "description": "Жизненный цикл: initState, didUpdateWidget, dispose, вызов setState"
+  },
+  {
+    "number": "3.3",
+    "title": "Базовые Material-виджеты",
+    "description": "MaterialApp, Scaffold, AppBar, Text, Icon, Image, Button-виджеты (ElevatedButton, TextButton, IconButton)"
+  },
+  {
+    "number": "3.4",
+    "title": "Виджеты ввода",
+    "description": "TextField, TextFormField, Form, FormKey — сбор и валидация пользовательского ввода"
+  },
+  {
+    "number": "3.5",
+    "title": "Cupertino-виджеты",
+    "description": "iOS-стиль: CupertinoApp, CupertinoButton, CupertinoTextField, CupertinoNavigationBar"
+  },
+
+  {
+    "number": "4",
+    "title": "Лейауты и позиционирование",
+    "description": "Модель размещения Flutter: constraints идут вниз, размеры идут вверх — главный принцип компоновки"
+  },
+  {
+    "number": "4.1",
+    "title": "Column и Row",
+    "description": "Основные оси, MainAxisAlignment, CrossAxisAlignment, Expanded, Flexible"
+  },
+  {
+    "number": "4.2",
+    "title": "Stack и Positioned",
+    "description": "Наложение виджетов, абсолютное позиционирование, Align"
+  },
+  {
+    "number": "4.3",
+    "title": "Container и SizedBox",
+    "description": "Padding, margin, decoration, BoxDecoration, constraints, Spacer"
+  },
+  {
+    "number": "4.4",
+    "title": "Прокручиваемые контейнеры",
+    "description": "SingleChildScrollView, ListView, GridView, CustomScrollView, Sliver-виджеты"
+  },
+  {
+    "number": "4.5",
+    "title": "Адаптивный и отзывчивый дизайн",
+    "description": "MediaQuery, LayoutBuilder, OrientationBuilder, адаптация под разные размеры экрана"
+  },
+
+  {
+    "number": "5",
+    "title": "Темы и стилизация",
+    "description": "ThemeData, ColorScheme, TextTheme — создание единого визуального стиля приложения"
+  },
+  {
+    "number": "5.1",
+    "title": "Material 3",
+    "description": "Переход на Material You: useMaterial3, динамические цвета, новые компоненты"
+  },
+  {
+    "number": "5.2",
+    "title": "Кастомные шрифты и иконки",
+    "description": "Подключение Google Fonts, локальных шрифтов, кастомных иконочных шрифтов через pubspec.yaml"
+  },
+  {
+    "number": "5.3",
+    "title": "Тёмная тема",
+    "description": "Настройка themeMode, поддержка light/dark, использование Theme.of(context)"
+  },
+
+  {
+    "number": "6",
+    "title": "Навигация и маршрутизация",
+    "description": "Navigator 1.0 vs Navigator 2.0, подходы push/pop и декларативная маршрутизация"
+  },
+  {
+    "number": "6.1",
+    "title": "Navigator 1.0",
+    "description": "Navigator.push, pop, pushReplacement, pushAndRemoveUntil, передача аргументов между экранами"
+  },
+  {
+    "number": "6.2",
+    "title": "Именованные маршруты",
+    "description": "Определение routes в MaterialApp, onGenerateRoute, передача аргументов через RouteSettings"
+  },
+  {
+    "number": "6.3",
+    "title": "GoRouter",
+    "description": "Декларативная маршрутизация: GoRoute, ShellRoute, параметры пути, редиректы, deep linking"
+  },
+  {
+    "number": "6.4",
+    "title": "Вложенная навигация",
+    "description": "BottomNavigationBar + Navigator, TabBar + TabBarView, сохранение состояния вкладок"
+  },
+
+  {
+    "number": "7",
+    "title": "Управление состоянием",
+    "description": "Обзор проблемы state management, сравнение подходов: setState, InheritedWidget, Provider, Riverpod, Bloc"
+  },
+  {
+    "number": "7.1",
+    "title": "setState и подъём состояния",
+    "description": "Локальное состояние, передача колбэков вверх по дереву, ограничения подхода"
+  },
+  {
+    "number": "7.2",
+    "title": "InheritedWidget и InheritedModel",
+    "description": "Механизм распространения данных вниз по дереву без передачи через конструкторы"
+  },
+  {
+    "number": "7.3",
+    "title": "Provider",
+    "description": "ChangeNotifierProvider, Consumer, context.watch/read/select — простой и популярный подход"
+  },
+  {
+    "number": "7.4",
+    "title": "Riverpod",
+    "description": "Provider, StateProvider, FutureProvider, StreamProvider, StateNotifierProvider, аннотации @riverpod"
+  },
+  {
+    "number": "7.5",
+    "title": "Bloc / Cubit",
+    "description": "BlocProvider, BlocBuilder, BlocListener, Cubit как упрощённый вариант, разделение логики и UI"
+  },
+  {
+    "number": "7.6",
+    "title": "GetX",
+    "description": "Реактивное состояние (Rx), GetxController, маршрутизация и DI через Get — обзор экосистемы"
+  },
+
+  {
+    "number": "8",
+    "title": "Работа с сетью",
+    "description": "HTTP-запросы, REST API, обработка ответов и ошибок в Flutter-приложениях"
+  },
+  {
+    "number": "8.1",
+    "title": "Пакет http",
+    "description": "GET, POST, PUT, DELETE запросы, заголовки, статус-коды, базовая обработка ответа"
+  },
+  {
+    "number": "8.2",
+    "title": "Dio",
+    "description": "Расширенный HTTP-клиент: интерсепторы, отмена запросов, загрузка файлов, FormData"
+  },
+  {
+    "number": "8.3",
+    "title": "Сериализация JSON",
+    "description": "jsonDecode, jsonEncode, fromJson/toJson вручную, кодогенерация через json_serializable и freezed"
+  },
+  {
+    "number": "8.4",
+    "title": "Обработка ошибок сети",
+    "description": "DioException, timeout, retry-логика, отображение ошибок пользователю, offline-режим"
+  },
+
+  {
+    "number": "9",
+    "title": "Локальное хранилище",
+    "description": "Варианты хранения данных на устройстве: ключ-значение, реляционные БД, файловая система"
+  },
+  {
+    "number": "9.1",
+    "title": "SharedPreferences",
+    "description": "Хранение простых настроек (bool, int, String), async-API, типичные сценарии использования"
+  },
+  {
+    "number": "9.2",
+    "title": "SQLite — sqflite",
+    "description": "Создание БД и таблиц, CRUD-операции, транзакции, миграции схемы"
+  },
+  {
+    "number": "9.3",
+    "title": "Drift (Moor)",
+    "description": "Типобезопасный ORM поверх SQLite, DAOs, реактивные запросы, кодогенерация"
+  },
+  {
+    "number": "9.4",
+    "title": "Hive и Isar",
+    "description": "NoSQL key-value и документная база данных для Flutter, высокая производительность, работа без SQL"
+  },
+  {
+    "number": "9.5",
+    "title": "Работа с файлами",
+    "description": "path_provider, чтение/запись файлов, работа с изображениями и документами через file_picker"
+  },
+
+  {
+    "number": "10",
+    "title": "Firebase и бэкенд-сервисы",
+    "description": "Интеграция Firebase в Flutter-проект через FlutterFire CLI, обзор доступных сервисов"
+  },
+  {
+    "number": "10.1",
+    "title": "Firebase Authentication",
+    "description": "Email/password, Google Sign-In, анонимная аутентификация, управление сессией"
+  },
+  {
+    "number": "10.2",
+    "title": "Cloud Firestore",
+    "description": "Документы и коллекции, CRUD, реалтаймовые подписки, составные запросы, правила безопасности"
+  },
+  {
+    "number": "10.3",
+    "title": "Firebase Storage",
+    "description": "Загрузка и скачивание файлов, metadata, правила доступа, прогресс загрузки"
+  },
+  {
+    "number": "10.4",
+    "title": "Firebase Cloud Messaging (FCM)",
+    "description": "Push-уведомления: foreground, background и terminated состояния, локальные уведомления"
+  },
+  {
+    "number": "10.5",
+    "title": "Firebase Analytics и Crashlytics",
+    "description": "Трекинг событий, воронки, отчёты об ошибках, настройка алертов"
+  },
+
+  {
+    "number": "11",
+    "title": "Анимации",
+    "description": "Типы анимаций в Flutter: implicit, explicit, physics-based, Rive/Lottie интеграция"
+  },
+  {
+    "number": "11.1",
+    "title": "Неявные анимации",
+    "description": "AnimatedContainer, AnimatedOpacity, AnimatedPositioned, TweenAnimationBuilder — быстрые анимации без контроллера"
+  },
+  {
+    "number": "11.2",
+    "title": "Явные анимации",
+    "description": "AnimationController, Tween, CurvedAnimation, AnimatedBuilder, TickerProviderStateMixin"
+  },
+  {
+    "number": "11.3",
+    "title": "Hero-анимации и переходы",
+    "description": "Hero-виджет для shared element transitions, PageRouteBuilder, кастомные переходы между экранами"
+  },
+  {
+    "number": "11.4",
+    "title": "Rive и Lottie",
+    "description": "Встраивание векторных и After Effects анимаций, управление через state machine (Rive)"
+  },
+
+  {
+    "number": "12",
+    "title": "Работа с устройством",
+    "description": "Доступ к нативным возможностям устройства через плагины и platform channels"
+  },
+  {
+    "number": "12.1",
+    "title": "Камера и галерея",
+    "description": "image_picker, camera-пакет — съёмка фото/видео, выбор из галереи, разрешения"
+  },
+  {
+    "number": "12.2",
+    "title": "Геолокация",
+    "description": "geolocator, permission_handler — получение координат, отслеживание позиции, обработка разрешений"
+  },
+  {
+    "number": "12.3",
+    "title": "Platform Channels",
+    "description": "MethodChannel, EventChannel — написание нативного кода (Kotlin/Swift) и вызов из Dart"
+  },
+  {
+    "number": "12.4",
+    "title": "Уведомления",
+    "description": "flutter_local_notifications — расписание, каналы Android, действия, обработка нажатий"
+  },
+  {
+    "number": "12.5",
+    "title": "Connectivity и Battery",
+    "description": "Отслеживание состояния сети и уровня заряда, реакция приложения на изменения"
+  },
+
+  {
+    "number": "13",
+    "title": "Архитектура приложения",
+    "description": "Принципы чистой архитектуры, разделение ответственности, масштабируемые подходы для Flutter"
+  },
+  {
+    "number": "13.1",
+    "title": "MVVM",
+    "description": "Model-View-ViewModel в контексте Flutter, ViewModel через ChangeNotifier или Riverpod"
+  },
+  {
+    "number": "13.2",
+    "title": "Clean Architecture",
+    "description": "Слои: presentation, domain, data — UseCases, Repositories, Entities, Dependency Injection"
+  },
+  {
+    "number": "13.3",
+    "title": "Внедрение зависимостей (DI)",
+    "description": "get_it, injectable — регистрация и получение зависимостей, кодогенерация для DI"
+  },
+  {
+    "number": "13.4",
+    "title": "Структура папок и Feature-first подход",
+    "description": "Организация кода по фичам против слоёв, монорепо, barrel файлы, масштабирование командой"
+  },
+
+  {
+    "number": "14",
+    "title": "Тестирование",
+    "description": "Пирамида тестирования Flutter: unit, widget и integration тесты, TDD-подход"
+  },
+  {
+    "number": "14.1",
+    "title": "Unit-тесты",
+    "description": "Пакет test, группировка, setUp/tearDown, моки через Mockito и mocktail"
+  },
+  {
+    "number": "14.2",
+    "title": "Widget-тесты",
+    "description": "flutter_test, WidgetTester, pump, pumpAndSettle, finder, golden tests"
+  },
+  {
+    "number": "14.3",
+    "title": "Integration-тесты",
+    "description": "integration_test пакет, запуск на эмуляторе/устройстве, PatrolTester для нативных UI"
+  },
+  {
+    "number": "14.4",
+    "title": "BDD и паттерны тестирования",
+    "description": "Given-When-Then, Page Object Model для widget-тестов, организация тест-сьютов"
+  },
+
+  {
+    "number": "15",
+    "title": "Производительность и оптимизация",
+    "description": "Профилирование с DevTools, выявление и устранение узких мест в производительности"
+  },
+  {
+    "number": "15.1",
+    "title": "Flutter DevTools",
+    "description": "Timeline, Memory, CPU profiler, Widget Inspector, Network — основные инструменты диагностики"
+  },
+  {
+    "number": "15.2",
+    "title": "Оптимизация рендеринга",
+    "description": "const-конструкторы, RepaintBoundary, compute для тяжёлых операций, Isolates"
+  },
+  {
+    "number": "15.3",
+    "title": "Размер и время запуска приложения",
+    "description": "Deferred loading, tree shaking, анализ bundle через flutter build --analyze-size"
+  },
+  {
+    "number": "15.4",
+    "title": "Работа с изображениями",
+    "description": "cached_network_image, предзагрузка, форматы WebP/AVIF, ограничение кеша"
+  },
+
+  {
+    "number": "16",
+    "title": "CI/CD и деплой",
+    "description": "Автоматизация сборки, тестирования и публикации Flutter-приложений"
+  },
+  {
+    "number": "16.1",
+    "title": "Подписание и сборка",
+    "description": "Keystore для Android, Certificates и Provisioning Profiles для iOS, flavor и build config"
+  },
+  {
+    "number": "16.2",
+    "title": "Fastlane",
+    "description": "Автоматизация скриншотов, подписания, загрузки в Google Play и App Store через lanes"
+  },
+  {
+    "number": "16.3",
+    "title": "GitHub Actions / Codemagic",
+    "description": "Настройка пайплайнов: lint → test → build → deploy, переменные окружения, артефакты"
+  },
+  {
+    "number": "16.4",
+    "title": "Публикация в магазины",
+    "description": "Google Play Console, App Store Connect — требования, staged rollout, ASO-базовые принципы"
+  },
+
+  {
+    "number": "17",
+    "title": "Flutter Web и Desktop",
+    "description": "Расширение Flutter за пределы мобильных платформ: особенности и ограничения"
+  },
+  {
+    "number": "17.1",
+    "title": "Flutter Web",
+    "description": "CanvasKit vs HTML renderer, SEO-ограничения, адаптация UI под мышь и клавиатуру"
+  },
+  {
+    "number": "17.2",
+    "title": "Flutter Desktop",
+    "description": "Windows, macOS, Linux — нативные меню, системный трей, работа с файловой системой"
+  },
+  {
+    "number": "17.3",
+    "title": "Адаптивный UI для всех платформ",
+    "description": "Adaptive Scaffold, breakpoints, Platform.isX проверки, Flutter Adaptive UI guidelines"
+  },
+
+  {
+    "number": "18",
+    "title": "Продвинутые темы",
+    "description": "Углублённые концепции для уверенного Flutter-разработчика"
+  },
+  {
+    "number": "18.1",
+    "title": "Кастомный рендеринг и CustomPainter",
+    "description": "Canvas API, Paint, Path, анимация кастомной графики, производительные кастомные виджеты"
+  },
+  {
+    "number": "18.2",
+    "title": "Создание пакетов и плагинов",
+    "description": "Структура pub.dev пакета, написание плагина с нативным кодом, публикация на pub.dev"
+  },
+  {
+    "number": "18.3",
+    "title": "Flavor и окружения",
+    "description": "dev/staging/prod конфигурации, --dart-define, flutter_flavor — разные бэкенды и ключи"
+  },
+  {
+    "number": "18.4",
+    "title": "Безопасность приложения",
+    "description": "Хранение секретов (flutter_secure_storage), защита от реверс-инжиниринга (obfuscation), Certificate Pinning"
+  },
+  {
+    "number": "18.5",
+    "title": "Accessibility (a11y)",
+    "description": "Semantics-виджет, экранные читалки TalkBack/VoiceOver, минимальные размеры касания, contrast ratio"
+  }
+]
