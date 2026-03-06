@@ -4,10 +4,10 @@
 
 JSON-сериализация — преобразование между JSON (строка/Map) и Dart-объектами. Flutter использует три подхода:
 
-| Подход | Когда использовать |
-|--------|-------------------|
-| Ручной `fromJson`/`toJson` | Небольшие проекты, 3–5 моделей |
-| `json_serializable` | Средние/большие проекты, автогенерация |
+| Подход                          | Когда использовать                         |
+| ------------------------------- | ------------------------------------------ |
+| Ручной `fromJson`/`toJson`      | Небольшие проекты, 3–5 моделей             |
+| `json_serializable`             | Средние/большие проекты, автогенерация     |
 | `freezed` + `json_serializable` | Когда нужны immutable модели + union types |
 
 ---
@@ -216,13 +216,13 @@ class Cart {
 
 ## 7. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
+| Ошибка                                       | Причина                                         | Решение                                                     |
+| -------------------------------------------- | ----------------------------------------------- | ----------------------------------------------------------- |
 | `type 'Null' is not a subtype of type 'int'` | Поле в JSON равно null, а в модели non-nullable | Сделай поле nullable или добавь `@JsonKey(defaultValue: 0)` |
-| `toJson()` не сериализует вложенные объекты | Нет `explicitToJson: true` | Добавь `@JsonSerializable(explicitToJson: true)` |
-| Устаревший `.g.dart` | Забыл перегенерировать | `dart run build_runner build` |
-| `part` директива не найдена | Сгенерированный файл ещё не создан | Запусти `build_runner` |
-| Ключ `snake_case` в JSON, `camelCase` в Dart | Разные соглашения | `@JsonKey(name: 'snake_key')` или fieldRename |
+| `toJson()` не сериализует вложенные объекты  | Нет `explicitToJson: true`                      | Добавь `@JsonSerializable(explicitToJson: true)`            |
+| Устаревший `.g.dart`                         | Забыл перегенерировать                          | `dart run build_runner build`                               |
+| `part` директива не найдена                  | Сгенерированный файл ещё не создан              | Запусти `build_runner`                                      |
+| Ключ `snake_case` в JSON, `camelCase` в Dart | Разные соглашения                               | `@JsonKey(name: 'snake_key')` или fieldRename               |
 
 ---
 

@@ -8,7 +8,7 @@
 # pubspec.yaml
 dependencies:
   drift: ^2.14.1
-  sqlite3_flutter_libs: ^0.5.0   # нативный SQLite
+  sqlite3_flutter_libs: ^0.5.0 # нативный SQLite
   path_provider: ^2.1.2
   path: ^1.9.0
 
@@ -213,13 +213,13 @@ class TaskListScreen extends StatelessWidget {
 
 ## 7. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
-| `part ... not found` | Не запущен `build_runner` | `dart run build_runner build` |
-| `schemaVersion` не обновлён | Изменил таблицу без версии | Увеличь `schemaVersion`, добавь миграцию |
-| Stream не обновляется | Используется `get()` вместо `watch()` | Замени на `.watch()` |
-| `Value` vs `Value.absent()` | Companion требует явного указания | `Value.absent()` = не изменять поле |
-| Медленный DEBUG сборка | Много кодогенерации | Нормально, RELEASE значительно быстрее |
+| Ошибка                      | Причина                               | Решение                                  |
+| --------------------------- | ------------------------------------- | ---------------------------------------- |
+| `part ... not found`        | Не запущен `build_runner`             | `dart run build_runner build`            |
+| `schemaVersion` не обновлён | Изменил таблицу без версии            | Увеличь `schemaVersion`, добавь миграцию |
+| Stream не обновляется       | Используется `get()` вместо `watch()` | Замени на `.watch()`                     |
+| `Value` vs `Value.absent()` | Companion требует явного указания     | `Value.absent()` = не изменять поле      |
+| Медленный DEBUG сборка      | Много кодогенерации                   | Нормально, RELEASE значительно быстрее   |
 
 ---
 

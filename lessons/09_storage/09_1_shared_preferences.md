@@ -184,13 +184,13 @@ class TokenStorage {
 
 ## 7. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
-| `MissingPluginException` | Не вызван `WidgetsFlutterBinding.ensureInitialized()` | Добавь в `main()` перед `getInstance()` |
-| Данные теряются при обновлении | Ключ изменён в коде | Храни все ключи как константы |
-| Хранишь JSON в `setString` | Нет встроенного `setObject` | Храни как `jsonEncode(obj.toJson())` |
-| Токены в SharedPreferences | Не зашифровано | Используй `flutter_secure_storage` |
-| `null` при первом запуске | Ключа ещё нет | Всегда используй `?? defaultValue` |
+| Ошибка                         | Причина                                               | Решение                                 |
+| ------------------------------ | ----------------------------------------------------- | --------------------------------------- |
+| `MissingPluginException`       | Не вызван `WidgetsFlutterBinding.ensureInitialized()` | Добавь в `main()` перед `getInstance()` |
+| Данные теряются при обновлении | Ключ изменён в коде                                   | Храни все ключи как константы           |
+| Хранишь JSON в `setString`     | Нет встроенного `setObject`                           | Храни как `jsonEncode(obj.toJson())`    |
+| Токены в SharedPreferences     | Не зашифровано                                        | Используй `flutter_secure_storage`      |
+| `null` при первом запуске      | Ключа ещё нет                                         | Всегда используй `?? defaultValue`      |
 
 ---
 

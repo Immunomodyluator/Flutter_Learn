@@ -7,7 +7,7 @@
 ```yaml
 dependencies:
   firebase_auth: ^4.17.9
-  google_sign_in: ^6.2.1   # для Google-входа
+  google_sign_in: ^6.2.1 # для Google-входа
 ```
 
 ---
@@ -206,12 +206,12 @@ final router = GoRouter(
 
 ## 6. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
-| `FirebaseAuthException: user-not-found` | Email не зарегистрирован | Показывай общее сообщение "неверные данные" |
-| `PlatformException: sign_in_failed` (Google) | SHA-1 не добавлен в Firebase | Добавь SHA-1 fingerprint в консоли |
-| Пользователь залогинен, но `currentUser == null` | `initializeApp()` вызван не перед использованием | `await Firebase.initializeApp()` в `main()` |
-| `wrong-password` раскрывает информацию об аккаунтах | Enum атака | Используй одно сообщение для `user-not-found` и `wrong-password` |
+| Ошибка                                              | Причина                                          | Решение                                                          |
+| --------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------- |
+| `FirebaseAuthException: user-not-found`             | Email не зарегистрирован                         | Показывай общее сообщение "неверные данные"                      |
+| `PlatformException: sign_in_failed` (Google)        | SHA-1 не добавлен в Firebase                     | Добавь SHA-1 fingerprint в консоли                               |
+| Пользователь залогинен, но `currentUser == null`    | `initializeApp()` вызван не перед использованием | `await Firebase.initializeApp()` в `main()`                      |
+| `wrong-password` раскрывает информацию об аккаунтах | Enum атака                                       | Используй одно сообщение для `user-not-found` и `wrong-password` |
 
 ---
 

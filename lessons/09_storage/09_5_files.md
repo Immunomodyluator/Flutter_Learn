@@ -7,7 +7,7 @@ Flutter предоставляет доступ к файловой систем
 ```yaml
 # pubspec.yaml
 dependencies:
-  path_provider: ^2.1.2  # пути к папкам системы
+  path_provider: ^2.1.2 # пути к папкам системы
 ```
 
 ---
@@ -187,13 +187,13 @@ Future<void> writeLargeFile(String path, List<String> lines) async {
 
 ## 8. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
-| `FileSystemException: Permission denied` | Нет разрешения на Android | Запрашивай `permission_handler` |
-| `PathNotFoundException` | Папка не создана | `await file.parent.create(recursive: true)` перед записью |
-| Большой файл в OOM | `readAsBytes()` для 100MB файла | Используй `openRead()` + stream |
-| Файл пропал после обновления | `getTemporaryDirectory()` очищается | Для постоянного хранения → `getApplicationDocumentsDirectory()` |
-| Не работает на Web | `dart:io` недоступен во Flutter Web | Используй `universal_io` или `js`-подход |
+| Ошибка                                   | Причина                             | Решение                                                         |
+| ---------------------------------------- | ----------------------------------- | --------------------------------------------------------------- |
+| `FileSystemException: Permission denied` | Нет разрешения на Android           | Запрашивай `permission_handler`                                 |
+| `PathNotFoundException`                  | Папка не создана                    | `await file.parent.create(recursive: true)` перед записью       |
+| Большой файл в OOM                       | `readAsBytes()` для 100MB файла     | Используй `openRead()` + stream                                 |
+| Файл пропал после обновления             | `getTemporaryDirectory()` очищается | Для постоянного хранения → `getApplicationDocumentsDirectory()` |
+| Не работает на Web                       | `dart:io` недоступен во Flutter Web | Используй `universal_io` или `js`-подход                        |
 
 ---
 

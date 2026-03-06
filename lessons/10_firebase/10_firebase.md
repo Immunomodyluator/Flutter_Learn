@@ -14,15 +14,15 @@ dependencies:
 
 ## 2. Ключевые сервисы Firebase для Flutter
 
-| Сервис | Пакет | Назначение |
-|--------|-------|-----------|
-| Authentication | `firebase_auth` | Email/Google/Apple/Phone вход |
-| Firestore | `cloud_firestore` | NoSQL база в реальном времени |
-| Storage | `firebase_storage` | Хранение файлов (фото, видео) |
-| FCM | `firebase_messaging` | Push-уведомления |
-| Analytics | `firebase_analytics` | Аналитика событий |
-| Crashlytics | `firebase_crashlytics` | Отчёты об ошибках |
-| Remote Config | `firebase_remote_config` | A/B тесты, feature flags |
+| Сервис         | Пакет                    | Назначение                    |
+| -------------- | ------------------------ | ----------------------------- |
+| Authentication | `firebase_auth`          | Email/Google/Apple/Phone вход |
+| Firestore      | `cloud_firestore`        | NoSQL база в реальном времени |
+| Storage        | `firebase_storage`       | Хранение файлов (фото, видео) |
+| FCM            | `firebase_messaging`     | Push-уведомления              |
+| Analytics      | `firebase_analytics`     | Аналитика событий             |
+| Crashlytics    | `firebase_crashlytics`   | Отчёты об ошибках             |
+| Remote Config  | `firebase_remote_config` | A/B тесты, feature flags      |
 
 ---
 

@@ -240,13 +240,13 @@ service cloud.firestore {
 
 ## 7. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
-| `PERMISSION_DENIED` | Security Rules запрещают доступ | Проверь Rules в Firebase Console |
-| `null` данные при `doc.data()` | Документ не существует | Проверяй `doc.exists` |
-| Каждый rebuild запрашивает данные | `get()` внутри `build()` | Вынести в `initState` или Provider |
-| Медленные запросы | Нет индексов для сложных where+orderBy | Создай композитный индекс в Console |
-| Timestamp null при offline | `serverTimestamp()` не заполнен | Используй `hasPendingWrites` для проверки |
+| Ошибка                            | Причина                                | Решение                                   |
+| --------------------------------- | -------------------------------------- | ----------------------------------------- |
+| `PERMISSION_DENIED`               | Security Rules запрещают доступ        | Проверь Rules в Firebase Console          |
+| `null` данные при `doc.data()`    | Документ не существует                 | Проверяй `doc.exists`                     |
+| Каждый rebuild запрашивает данные | `get()` внутри `build()`               | Вынести в `initState` или Provider        |
+| Медленные запросы                 | Нет индексов для сложных where+orderBy | Создай композитный индекс в Console       |
+| Timestamp null при offline        | `serverTimestamp()` не заполнен        | Используй `hasPendingWrites` для проверки |
 
 ---
 

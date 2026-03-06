@@ -123,13 +123,13 @@ final theme = context.getInheritedWidgetOfExactType<CartInherited>();
 bool updateShouldNotify(CartInherited oldWidget) {
   // true = все зависимые виджеты перестроятся
   // false = не перестраивать даже если InheritedWidget пересоздан
-  
+
   // По значению
   return items.length != oldWidget.items.length;
-  
+
   // По идентичности
   return !identical(items, oldWidget.items);
-  
+
   // Всегда перестраивать
   return true;
 }
@@ -153,13 +153,13 @@ Form.of(context)            // → _FormScope
 
 ## 7. Почему Provider лучше InheritedWidget напрямую
 
-| | InheritedWidget | Provider |
-|--|----------------|---------|
+|                      | InheritedWidget              | Provider                  |
+| -------------------- | ---------------------------- | ------------------------- |
 | Изменяемое состояние | Нужна обёртка StatefulWidget | Встроено (ChangeNotifier) |
-| Множество типов | Вкладывать друг в друга | `MultiProvider` |
-| Lazy-загрузка | Нет | `lazy: true` |
-| `dispose` | Вручную | Автоматически |
-| Читаемость | Громоздко | Компактно |
+| Множество типов      | Вкладывать друг в друга      | `MultiProvider`           |
+| Lazy-загрузка        | Нет                          | `lazy: true`              |
+| `dispose`            | Вручную                      | Автоматически             |
+| Читаемость           | Громоздко                    | Компактно                 |
 
 ---
 

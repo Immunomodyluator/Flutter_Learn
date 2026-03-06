@@ -182,13 +182,13 @@ final response = await client.get(Uri.parse('$baseUrl/me'));
 
 ## 7. Типичные ошибки
 
-| Ошибка | Причина | Решение |
-|--------|---------|---------|
-| `SocketException` | Нет интернета | Проверяй connectivity перед запросом |
-| `FormatException` в `jsonDecode` | Сервер вернул HTML (ошибка nginx) | Проверяй `statusCode` перед decode |
-| `statusCode == 200` но пустые данные | Не передан `Accept: application/json` | Добавь заголовок headers |
-| Утечка памяти | `Client()` создаётся и не закрывается | Вызывай `client.close()` или DI синглтон |
-| `setState` после dispose | `await` завершился после ухода со страницы | Проверяй `mounted` после каждого `await` |
+| Ошибка                               | Причина                                    | Решение                                  |
+| ------------------------------------ | ------------------------------------------ | ---------------------------------------- |
+| `SocketException`                    | Нет интернета                              | Проверяй connectivity перед запросом     |
+| `FormatException` в `jsonDecode`     | Сервер вернул HTML (ошибка nginx)          | Проверяй `statusCode` перед decode       |
+| `statusCode == 200` но пустые данные | Не передан `Accept: application/json`      | Добавь заголовок headers                 |
+| Утечка памяти                        | `Client()` создаётся и не закрывается      | Вызывай `client.close()` или DI синглтон |
+| `setState` после dispose             | `await` завершился после ухода со страницы | Проверяй `mounted` после каждого `await` |
 
 ---
 
